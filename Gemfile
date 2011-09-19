@@ -10,3 +10,12 @@ group :assets do
   gem 'coffee-rails', '~> 3.1.0'
   gem 'uglifier'
 end
+
+group :development do
+  gem 'heroku'
+end
+
+group :production do
+  gem 'pg'
+  gem 'therubyracer-heroku'
+end
